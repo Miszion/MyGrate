@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.signup-text {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    text-align: center;
+    margin-top: 125px;
+    color: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.overlay {
+    outline: 9999px solid rgba(0,0,0,0.7);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-slot {
+    overflow: hidden;
+    position: absolute;
+    border-left: 3px #111111 solid;
+    animation: appear 2s forwards;
+    z-index: -1;
+    pointer-events: none;
+    zoom: .5;
+}
+
+
+input[type=text] {
+    border: none;
+    font-size: 20px;
+    border-bottom: 3px solid #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    background: unset;
+    color: white;
+}
+
+input[type=password] {
+    border: none;
+    font-size: 20px;
+    border-bottom: 3px solid #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    background: unset;
+    color: white;
+
+}
+
+input[type=password]:focus {
+    outline: none;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=password]:hover {
+    opacity: .5;
+}
+
+input[type=text]:hover {
+    opacity: .5;
+}
+
+
+.text-prompt {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 45px;
+    color: white;
+}
+
+.sign-up-form {
+    justify-content: center;
+    display: flex;
+    width: 33%;
+}
+
+.form-partition {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.submit-button {
+    width: 150px;
+    height: 100px;
+    background: #20232a;
+    border-radius: 4%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25%;
+    margin-left: 75px;
+  }
+
+  .button-text-signup {
+      top: 30px;
+      position: relative;
+
+  }
+
+  .button-text {
+    top: 30px;
+    position: relative;
+
+}
+
+.ghost-form {
+    width: 50px;
+}
+
+.middle-table {
+    position: absolute;
+    display: flex;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    animation: appear 2s forwards;
+    z-index: 2;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

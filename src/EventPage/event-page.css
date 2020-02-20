@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900&display=swap');
+
+.filter-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    width: 100%;
+    z-index: 2;
+}
+
+.button-text {
+    color: #20232a;
+}
+
+
+.event-booked-modal {
+    position: absolute;
+    left: 33%;
+    display: flex;
+    height: 70%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 20%;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.modal-button-layout {
+
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50%;
+}
+
+.modal-text {
+    position: relative;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    top: 20%;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 2%;
+    font-size: 17px;
+    height: 80px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700
+}
+
+.button-list{
+    position: relative;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+    top: 25%;
+}
+
+.desc-text {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.overlay {
+    outline: 9999px solid rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+input[type=radio]{
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    padding: 10px;
+}
+
+.filter-text {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.event-title {
+    margin-top: 4%;
+}
+
+.events-found {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-slip {
+
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 2%;
+    background-color: #20232a;
+    color: #ffffff;
+    width: 75%;
+    align-self: center;
+}
+
+.event-slip:hover {
+    pointer-events: visible;
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+
+.filter-fade {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+}
+
+.filter-title {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    top: 20%;
+    color: #ffffff;
+}
+
+
+.pic-appear {
+    opacity: 0;
+  }
+  .pic-enter {
+    opacity: 1;
+    transition: opacity ease-in 200ms;
+  }
+  .pic-exit {
+    opacity: 1;
+  }
+  .pic-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+
+
+#food-pic {
+    z-index: -2;
+    zoom: 50%;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    animation: imgAppear 2s forwards;
+}
+
+#music-pic {
+    background-size: cover;
+    position: absolute;
+    zoom: 50%;
+    animation: imgAppear2 2s forwards;
+}
+
+#history-pic {
+    background-size: cover;
+    position: absolute;
+    zoom: 50%;
+    animation: imgAppear3 2s forwards;
+}
+
+#tv-pic {
+    background-size: cover;
+    position: absolute;
+    zoom: 50%;
+    animation: imgAppear4 2s forwards;
+
+}
+
+#movie-pic {
+    background-size: cover;
+    position: absolute;
+    zoom: 50%;
+    animation: imgAppear5 2s forwards;
+}
+
+#misc-pic {
+    background-size: cover;
+    position: absolute;
+    zoom: .5;
+    animation: imgAppear6 2s forwards;
+}
+
+
+.event-disc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    top: 20%;
+    left: 33%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.event-info {
+    top: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.event-tab {
+
+    top: 20%;
+    width: 50%;
+    height: 70%;
+    left: 33%;
+    border-radius: 1%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search {
+
+    width: 100%;
+    position: relative;
+    height: 10%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.event-list {
+    width: 100%;
+    height: 70%;
+    top: 3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+
+input[id=search]{
+    border: none;
+    font-size: 20px;
+    
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#search-icon {
+    max-width: 40px;
+    max-height: 40px;
+    top: 14%;
+    position: relative;
+    cursor: pointer;
+}
+
+.border-line {
+    background-color: #ffffff;
+    height: 5px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 6%;
+}
+
+.trending-label {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    top: 5%;
+    right: 2%;
+}
+
+@keyframes imgAppear {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgAppear2 {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgAppear3 {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgAppear4 {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgAppear5 {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgAppear6 {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+

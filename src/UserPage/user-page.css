@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.welcome-text {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 100px;
+    animation: appear 2s forwards;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 66%;
+    width: 100%;
+    overflow-y: auto;
+    top: 24%;
+    
+
+}
+
+.title-user {
+    top: 30%;
+    position: relative;
+}
+
+.event-or-chat {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    height: 65px;
+    width: 75%;
+    background-color: #20232a;
+    border-radius: 2%;
+    margin-top: 20px;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.event-or-chat:hover {
+    opacity: .5;
+}
+
+.panel-box {
+    height: 500px;
+    width: 400px;
+    border-radius: 0%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.empty-column {
+    width: 250px;
+}
+
+.background-pic {
+    margin-top: -1200px;
+    background-size: cover;
+    z-index: -2;
+    position: absolute;
+    pointer-events: none;
+}
+
+.panel-title {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 2%;
+    opacity: 1;
+    color: #ffffff;
+}
+
+.panel-divider {
+    background-color: #ffffff;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    top: 7%;
+}
+
+.circle-container {
+    display: flex;
+    position: relative;
+    top: 74%;
+    left: 78%;
+    width: 75px;
+}
+
+
+.special-character {
+    color: #2ECC40;
+}
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 15%;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plus {
+    margin-top: 4px;
+    color: darkgreen;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.minus {
+    margin-top: 4px;
+    color: darkred;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.red {
+    background-color: #FF4136;
+    left: 5px;
+}
+
+.green{
+    background-color: #2ECC40;
+}
+
+.centered-panels {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    top: 30%;
+    position: absolute;
+    justify-content: center;
+}
+
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
